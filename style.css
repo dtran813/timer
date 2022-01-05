@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgba(29, 155, 81, 0.561);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outer-ring {
+  display: grid;
+  place-items: center;
+  width: 45rem;
+  height: 45rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: -5px 10px 25px rgba(0, 0, 0, 0.5), 5px -10px 25px rgba(255, 255, 255, 0.15);
+}
+
+.inner-ring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 3rem;
+  border-radius: 50%;
+  background: radial-gradient(55% 55% at 50% 50%, #3899c0 0%, #2689da 100%);
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.6);
+}
+
+.timer input {
+  color: #212529;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 6rem;
+  width: 9rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.colon {
+  color: #212529;
+  font-size: 7rem;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: transparent;
+  color: #212529;
+  border-radius: 9px;
+  border: 1px solid #333;
+  cursor: pointer;
+  width: 15rem;
+  padding: 0.5rem 2rem;
+}
+.start {
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+.clear {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
